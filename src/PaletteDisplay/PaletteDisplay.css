@@ -1,0 +1,43 @@
+.palette-display-container {
+    width: 50%;
+}
+
+.frame {
+    height: 400px;
+    width: 100%;
+    border-radius: 10px;
+    display: flex;
+    box-shadow: 0px 0px 10px 10px #121212;
+}
+
+.palette-column {
+    flex-grow: 1;
+}
+
+.palette-column:first-of-type {
+    border-radius: 10px 0 0 10px;
+}
+
+.palette-column:last-of-type {
+    border-radius: 0 10px 10px 0;
+}
+
+button {
+    padding: 10px;
+    margin-top: 20px;
+    background: linear-gradient(to left, transparent 20%, #e4c1f9 40%, #a9def9 60%, #d0f4de 80%, #fcf6bd 0);
+    background-position: 100% 100%;
+    background-size: 500% 100%;
+    border-radius: 20px;
+    border: none;
+    transition: 0.6s all ease-in-out;
+    color: lightgray;
+    box-shadow: 0px 0px 1px 1px lightgray;
+}
+
+button:hover {
+    background-position: 0% 100%;
+    cursor: pointer;
+    color: #121212;
+    box-shadow: none;
+}
