@@ -1,5 +1,4 @@
-import React, { useEffect, useState } from 'react';
-import './PaletteDisplay.css';
+import React, { useState } from 'react';
 
 const paletteList = [
     ["#fbf8cc","#fde4cf","#ffcfd2","#f1c0e8","#cfbaf0","#a3c4f3","#90dbf4","#8eecf5","#98f5e1","#b9fbc0"],
@@ -27,7 +26,7 @@ function PaletteDisplay() {
             <div className="frame">
                 {generatePaletteDisplay()}
             </div>
-            <button onClick={changePalette}>Show next palette!</button>
+            <button className="palette-button" onClick={changePalette}>Show next palette!</button>
         </div>
     );
 }

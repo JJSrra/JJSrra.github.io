@@ -1,0 +1,8 @@
+// Import global variables, common styles and mixins
+@import './styles/_variables.scss';
+@import './styles/_mixins.scss';
+@import './styles/_common.scss';
+
+// Import scss files from components
+@import './components/App/App.scss';
+@import './components/PaletteDisplay/PaletteDisplay.scss';

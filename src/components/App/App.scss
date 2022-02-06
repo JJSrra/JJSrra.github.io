@@ -1,0 +1,13 @@
+.app {
+  @include flex-center-column;
+  text-align: center;
+  background-color: $pageBackgroundColor;
+  min-height: 100vh;
+  font-size: $mainTextFontSize;
+  font-weight: $mainTextFontWeight;
+  color: $mainTextColor;
+}
+
+.page-title {
+  color: $mainTextColor;
+}

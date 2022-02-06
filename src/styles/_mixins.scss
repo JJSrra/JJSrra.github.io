@@ -1,0 +1,63 @@
+@mixin push-auto {
+    margin: { 
+        left: auto;
+        right: auto;
+    }
+}
+
+@mixin box($width, $height: $width) {
+    width: $width;
+    height: $height;
+}
+
+@mixin rounded-corners($rounded-corner-radius) {
+    -webkit-border-radius: $rounded-corner-radius;
+    -moz-border-radius: $rounded-corner-radius;
+    -ms-border-radius: $rounded-corner-radius;
+    border-radius: $rounded-corner-radius;
+}
+
+@mixin rounded-left-corners($rounded-corner-radius) {
+    -webkit-border-radius: $rounded-corner-radius 0 0 $rounded-corner-radius;
+    -moz-border-radius: $rounded-corner-radius 0 0 $rounded-corner-radius;
+    -ms-border-radius: $rounded-corner-radius 0 0 $rounded-corner-radius;
+    border-radius: $rounded-corner-radius 0 0 $rounded-corner-radius;
+}
+
+@mixin rounded-right-corners($rounded-corner-radius) {
+    -webkit-border-radius: 0 $rounded-corner-radius $rounded-corner-radius 0;
+    -moz-border-radius: 0 $rounded-corner-radius $rounded-corner-radius 0;
+    -ms-border-radius: 0 $rounded-corner-radius $rounded-corner-radius 0;
+    border-radius: 0 $rounded-corner-radius $rounded-corner-radius 0;
+}
+
+@mixin box-shadow-floating {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+// Flex mixins
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;
+}
+  
+@mixin flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+@mixin flex-center-column {
+    @include flex-center;
+    flex-direction: column;
+}
+  
+@mixin flex-center-vert {
+    display: flex;
+    align-items: center;
+}
+  
+@mixin flex-center-horiz {
+    display: flex;
+    justify-content: center;
+}
