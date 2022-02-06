@@ -1,11 +1,32 @@
 // Define colors
-$pageBackgroundColor: #222222;
-$mainTextColor: #E5E5E5;
+// -- Dark theme --
+$page-background-color-dark: #222222;
+$card-background-color-dark: #525252;
+$main-text-color-dark: #e5e5e5;
+$secondary-text-color-dark: #e5e5e5be;
+$link-color-dark: #ffd5aa;
+$button-text-dark: #e5e5e5;
+$button-background-dark: transparent;
+$button-hover-text-dark: #222222;
+$button-hover-background-dark: #e5e5e5;
+$button-box-shadow-dark: #d3d3d3;
+
+// -- Light theme --
+$page-background-color-light: #ffffff;
+$card-background-color-light: #86bfff;
+$main-text-color-light: #222222;
+$secondary-text-color-light: #22558f;
+$link-color-light: #659cda;
+$button-text-light: #ffffff;
+$button-background-light: #659cda;
+$button-hover-text-light: #ffffff;
+$button-hover-background-light: #22558f;
+$button-box-shadow-light: transparent;
 
 // Define font sizes and weights
-$mainTextFontSize: 13px;
-$mainTextFontWeight: 300;
-$secondaryTextFontSize: 10px;
-$secondaryTextFontWeight: 100;
-$titleFontSize: 30px;
-$titleFontWeight: 600;
+$main-text-font-size: 13px;
+$main-text-font-weight: 300;
+$secondary-text-font-weight: 10px;
+$secondary-text-font-weight: 100;
+$title-font-size: 30px;
+$title-font-weight: 600;

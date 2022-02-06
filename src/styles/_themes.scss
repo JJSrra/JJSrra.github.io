@@ -1,0 +1,59 @@
+// Defined variables with key strings to be autocompleted by the IDE
+$background: 'background';
+$card-background: 'card-background';
+$button-background: 'button-background';
+$button-text: 'button-text';
+$button-hover-background: 'button-hover-background';
+$button-hover-text: 'button-hover-text';
+$button-box-shadow: 'button-box-shadow';
+$text: 'text';
+$text-secondary: 'text-secondary';
+$link: 'link';
+
+// Chosen variables for each theme
+$themes: (
+    dark: (
+        background: $page-background-color-dark,
+        card-background: $card-background-color-dark,
+        button-background: $button-background-dark,
+        button-text: $button-text-dark,
+        button-hover-background: $button-hover-background-dark,
+        button-hover-text: $button-hover-text-dark,
+        button-box-shadow: $button-box-shadow-dark,
+        text: $main-text-color-dark,
+        text-secondary: $secondary-text-color-dark,
+        link: $link-color-dark
+    ),
+    light: (
+        background: $page-background-color-light,
+        card-background: $card-background-color-light,
+        button-background: $button-background-light,
+        button-text: $button-text-light,
+        button-hover-background: $button-hover-background-light,
+        button-hover-text: $button-hover-text-light,
+        button-box-shadow: $button-box-shadow-light,
+        text: $main-text-color-light,
+        text-secondary: $secondary-text-color-light,
+        link: $link-color-light
+    ),
+);
+
+// Themes a CSS attribute with a key from the theme map 
+@mixin themed() {
+    @each $theme, $map in $themes {
+        .theme-#{$theme} & {
+            $theme-map: () !global;
+            @each $key, $submap in $map {
+                $value: map-get(map-get($themes, $theme), '#{$key}');
+                $theme-map: map-merge($theme-map, ($key: $value)) !global;
+            }
+            @content;
+            $theme-map: null !global;
+        }
+    }
+}
+
+// Gets a CSS attribute themed with a key 
+@function t($key) {
+    @return map-get($theme-map, $key);
+}

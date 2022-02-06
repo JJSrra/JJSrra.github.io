@@ -1,13 +1,23 @@
 .app {
+  @include themed() {
+    color: t($text);
+    background-color: t($background);
+  }
+
   @include flex-center-column;
   text-align: center;
-  background-color: $pageBackgroundColor;
   min-height: 100vh;
-  font-size: $mainTextFontSize;
-  font-weight: $mainTextFontWeight;
-  color: $mainTextColor;
-}
+  font-size: $main-text-font-size;
+  font-weight: $main-text-font-weight;
 
-.page-title {
-  color: $mainTextColor;
+  header {
+    @include sticky-top-element;
+    @include flex-center;
+    width: 100%;
+
+    .change-theme-button {
+      position: absolute;
+      right: 20px;
+    }
+  }
 }
