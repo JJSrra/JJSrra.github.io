@@ -5,11 +5,13 @@ $card-background-color-dark: #525252;
 $main-text-color-dark: #e5e5e5;
 $secondary-text-color-dark: #e5e5e5be;
 $link-color-dark: #ffd5aa;
-$button-text-dark: #e5e5e5;
-$button-background-dark: transparent;
-$button-hover-text-dark: #222222;
-$button-hover-background-dark: #e5e5e5;
-$button-box-shadow-dark: #d3d3d3;
+$button-text-color-dark: #e5e5e5;
+$button-background-color-dark: transparent;
+$button-hover-text-color-dark: #222222;
+$button-hover-background-color-dark: #e5e5e5;
+$button-box-shadow-color-dark: #d3d3d3;
+
+$dark-theme-button-hover-background-color: #ffffff;
 
 // -- Light theme --
 $page-background-color-light: #ffffff;
@@ -17,11 +19,11 @@ $card-background-color-light: #86bfff;
 $main-text-color-light: #222222;
 $secondary-text-color-light: #22558f;
 $link-color-light: #659cda;
-$button-text-light: #ffffff;
-$button-background-light: #659cda;
-$button-hover-text-light: #ffffff;
-$button-hover-background-light: #22558f;
-$button-box-shadow-light: transparent;
+$button-text-color-light: #ffffff;
+$button-background-color-light: #659cda;
+$button-hover-text-color-light: #ffffff;
+$button-hover-background-color-light: #22558f;
+$button-box-shadow-color-light: transparent;
 
 // Define font sizes and weights
 $main-text-font-size: 13px;

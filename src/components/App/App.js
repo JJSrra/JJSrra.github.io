@@ -14,7 +14,7 @@ function App() {
       <div className="app">
         <header>
           <h1 className="title">JJSrra.github.io</h1>
-          <button className="change-theme-button" onClick={changeTheme}><i className={'fa-moon ' + (darkTheme ? 'fas' : 'far')}/></button>
+          <button className={'change-theme-button ' + (darkTheme ? 'dark-theme-active' : '')} onClick={changeTheme}><i className={'fa-moon ' + (darkTheme ? 'fas' : 'far')}/></button>
         </header>
         <PaletteDisplay></PaletteDisplay>
       </div>

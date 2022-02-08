@@ -18,9 +18,9 @@ code {
 
 button {
     @include themed() {
-        color: t($button-text);
-        background-color: t($button-background);
-        box-shadow: 0px 0px 1px 1px t($button-box-shadow);
+        color: t($button-text-color);
+        background-color: t($button-background-color);
+        box-shadow: 0px 0px 1px 1px t($button-box-shadow-color);
     }
 
     @include rounded-corners(20px);
@@ -30,8 +30,8 @@ button {
 
     &:hover {
         @include themed() {
-            color: t($button-hover-text);
-            background-color: t($button-hover-background);
+            color: t($button-hover-text-color);
+            background-color: t($button-hover-background-color);
         }
         cursor: pointer;
         box-shadow: none;

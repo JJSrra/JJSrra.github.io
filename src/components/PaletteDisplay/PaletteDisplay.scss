@@ -22,15 +22,19 @@
     }
 }
 
-.palette-button {
+button.palette-button {
+    @include themed() {
+        background: linear-gradient(to left, t($button-background-color) 20%, #e4c1f9 40%, #a9def9 60%, #d0f4de 80%, #fcf6bd 0);
+        color: t($button-text-color);
+        background-position: 100% 100%;
+        background-size: 500% 100%;
+    }
+
     margin-top: 20px;
-    background: linear-gradient(to left, transparent 20%, #e4c1f9 40%, #a9def9 60%, #d0f4de 80%, #fcf6bd 0);
-    background-position: 100% 100%;
-    background-size: 500% 100%;
     transition: 0.6s all ease-in-out;
 
     &:hover {
-        color: $main-text-color-light !important;
+        color: $main-text-color-light;
         background-position: 0% 100%;
     }
 }

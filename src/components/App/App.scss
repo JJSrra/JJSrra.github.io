@@ -1,7 +1,7 @@
 .app {
   @include themed() {
-    color: t($text);
-    background-color: t($background);
+    color: t($text-color);
+    background-color: t($background-color);
   }
 
   @include flex-center-column;
@@ -16,8 +16,33 @@
     width: 100%;
 
     .change-theme-button {
+      @include box(40px);
       position: absolute;
       right: 20px;
+
+      // This button in particular is not themed because it's special and changes the theme
+      background-color: transparent;
+      border: 1px solid $button-background-color-light;
+      // box-shadow: 0px 0px 2px 1px $button-background-color-light;
+      color: $button-background-color-light;
+
+      &:hover {
+        background-color: $button-background-color-light;
+        border-color: $button-background-color-light;
+        color: $button-text-color-light;
+      }
+
+      &.dark-theme-active {
+        box-shadow: none;
+        background-color: $button-hover-background-color-dark;
+        border: 1px solid $button-hover-background-color-dark;
+        color: $button-hover-text-color-dark;
+      
+        &:hover {
+          background-color: $dark-theme-button-hover-background-color;
+          border-color: $dark-theme-button-hover-background-color;
+        }
+      }
     }
   }
 }
