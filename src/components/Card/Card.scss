@@ -1,0 +1,32 @@
+.card {
+    @include box(400px, 500px);
+    @include rounded-corners(20px);
+    position: relative;
+    top: 0;
+    transition: all 0.3s ease;
+    margin: 30px 40px;
+
+    &:hover {
+        @include box-shadow-floating();
+        top: -5px;
+        cursor: pointer;
+    }
+    
+    .card-image {
+        @include box(400px);
+        @include rounded-upper-corners(20px);
+    }
+    
+    .card-text {
+        @include themed() {
+            background-color: t($card-background-color);
+            color: t($text-color);
+        }
+        @include box(400px, 100px);
+        @include rounded-lower-corners(20px);
+        @include flex-center-column;
+
+        font-size: $subtitle-font-size;
+        font-weight: $subtitle-font-weight;
+    }
+}

@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import PaletteDisplay from '../PaletteDisplay/PaletteDisplay';
+import Card from '../Card/Card';
 
 function App() {
 
@@ -16,7 +16,16 @@ function App() {
           <h1 className="title">JJSrra.github.io</h1>
           <button className={'change-theme-button ' + (darkTheme ? 'dark-theme-active' : '')} onClick={changeTheme}><i className={'fa-moon ' + (darkTheme ? 'fas' : 'far')}/></button>
         </header>
-        <PaletteDisplay></PaletteDisplay>
+        <div className="content">
+          <div className="cards-container">
+            <Card imageSource="https://pbs.twimg.com/profile_images/1414990564408262661/r6YemvF9_400x400.jpg" cardText="First card"></Card>
+            <Card></Card>
+            <Card></Card>
+            <Card></Card>
+            <Card></Card>
+            <Card></Card>
+          </div>
+        </div>
       </div>
     </div>
   );

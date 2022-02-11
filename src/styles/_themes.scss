@@ -9,6 +9,7 @@ $button-box-shadow-color: 'button-box-shadow-color';
 $text-color: 'text-color';
 $text-secondary-color: 'text-secondary-color';
 $link-color: 'link-color';
+$title-text-color: 'title-text-color';
 
 // Chosen variables for each theme
 $themes: (
@@ -22,7 +23,8 @@ $themes: (
         button-box-shadow-color: $button-box-shadow-color-dark,
         text-color: $main-text-color-dark,
         text-secondary-color: $secondary-text-color-dark,
-        link-color: $link-color-dark
+        link-color: $link-color-dark,
+        title-text-color: $title-text-color-dark
     ),
     light: (
         background-color: $page-background-color-light,
@@ -34,7 +36,8 @@ $themes: (
         button-box-shadow-color: $button-box-shadow-color-light,
         text-color: $main-text-color-light,
         text-secondary-color: $secondary-text-color-light,
-        link-color: $link-color-light
+        link-color: $link-color-light,
+        title-text-color: $title-text-color-light
     ),
 );
 

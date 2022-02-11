@@ -31,6 +31,20 @@
     border-radius: 0 $rounded-corner-radius $rounded-corner-radius 0;
 }
 
+@mixin rounded-upper-corners($rounded-corner-radius) {
+    -webkit-border-radius: $rounded-corner-radius $rounded-corner-radius 0 0;
+    -moz-border-radius: $rounded-corner-radius $rounded-corner-radius 0 0;
+    -ms-border-radius: $rounded-corner-radius $rounded-corner-radius 0 0;
+    border-radius: $rounded-corner-radius $rounded-corner-radius 0 0;
+}
+
+@mixin rounded-lower-corners($rounded-corner-radius) {
+    -webkit-border-radius: 0 0 $rounded-corner-radius $rounded-corner-radius;
+    -moz-border-radius: 0 0 $rounded-corner-radius $rounded-corner-radius;
+    -ms-border-radius: 0 0 $rounded-corner-radius $rounded-corner-radius;
+    border-radius: 0 0 $rounded-corner-radius $rounded-corner-radius;
+}
+
 @mixin box-shadow-floating {
     box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
