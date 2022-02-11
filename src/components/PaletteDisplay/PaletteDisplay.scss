@@ -1,4 +1,5 @@
 .palette-display-container {
+    @include push-auto;
     width: 50%;
 
     .frame {
