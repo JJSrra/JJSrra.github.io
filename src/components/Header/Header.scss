@@ -17,13 +17,11 @@ header {
 
         // This button in particular is not themed because it's special and changes the theme
         background-color: transparent;
-        border: 1px solid $title-text-color-light;
         color: $title-text-color-light;
 
         &:hover {
-            background-color: $button-background-color-light;
-            border-color: $button-background-color-light;
-            color: $button-text-color-light;
+            background-color: $button-hover-background-color-light;
+            color: $button-hover-text-color-light;
         }
 
         &.dark-theme-active {
@@ -35,6 +33,7 @@ header {
             &:hover {
                 background-color: $dark-theme-button-hover-background-color;
                 border-color: $dark-theme-button-hover-background-color;
+                color: $title-text-color-dark;
             }
         }
     }
