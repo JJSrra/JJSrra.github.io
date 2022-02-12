@@ -3,7 +3,9 @@ import React from 'react';
 function Card(props) {
 
     const accessLink = () => {
-        document.location.href = props.link;
+        if (props.link) {
+            document.location.href = props.link;
+        }
     }
 
     return (
