@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 const paletteList = [
     ["#fbf8cc","#fde4cf","#ffcfd2","#f1c0e8","#cfbaf0","#a3c4f3","#90dbf4","#8eecf5","#98f5e1","#b9fbc0"],
@@ -11,6 +11,10 @@ const paletteList = [
 
 function PaletteDisplay() {
     
+    useEffect(() => {
+        document.title = "JJSrra - Palette Display";
+    }, []);
+
     const [selectedPalette, setSelectedPalette] = useState(0);
 
     const changePalette = () => {

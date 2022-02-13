@@ -1,5 +1,6 @@
 // Defined variables with key strings to be autocompleted by the IDE
 $background-color: 'background-color';
+$secondary-background-color: 'secondary-background-color';
 $card-background-color: 'card-background-color';
 $button-background-color: 'button-background-color';
 $button-text-color: 'button-text-color';
@@ -15,6 +16,7 @@ $title-text-color: 'title-text-color';
 $themes: (
     dark: (
         background-color: $page-background-color-dark,
+        secondary-background-color: $page-secondary-background-color-dark,
         card-background-color: $card-background-color-dark,
         button-background-color: $button-background-color-dark,
         button-text-color: $button-text-color-dark,
@@ -28,6 +30,7 @@ $themes: (
     ),
     light: (
         background-color: $page-background-color-light,
+        secondary-background-color: $page-secondary-background-color-light,
         card-background-color: $card-background-color-light,
         button-background-color: $button-background-color-light,
         button-text-color: $button-text-color-light,

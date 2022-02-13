@@ -1,6 +1,11 @@
+import { useEffect } from 'react';
 import Card from '../Card/Card';
 
 function Home() {
+
+  useEffect(() => {
+    document.title = "JJSrra - Home Page";
+  }, []);
 
   return (
     <div className="cards-container">

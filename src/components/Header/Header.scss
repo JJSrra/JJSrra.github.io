@@ -1,6 +1,6 @@
 header {
     @include themed() {
-        background-color: t($background-color);
+        background-color: t($secondary-background-color);
         border-bottom: 1px solid t($title-text-color);
         color: t($title-text-color);
     }
