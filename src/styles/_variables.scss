@@ -30,11 +30,17 @@ $button-hover-background-color-light: #08415c;
 $button-box-shadow-color-light: #08415c;
 
 // Define font sizes and weights
-$main-text-font-size: 18px;
+$main-text-font-size: 20px;
+$main-text-font-size-mobile: 18px;
 $main-text-font-weight: 300;
 $secondary-text-font-weight: 10px;
 $secondary-text-font-weight: 100;
 $title-font-size: 30px;
+$title-font-size-mobile: 22px;
 $title-font-weight: 600;
 $subtitle-font-size: 24px;
+$subtitle-font-size-mobile: 16px;
 $subtitle-font-weight: 400;
+
+// Define media query breakpoints
+$breakpoint-mobile: 600px;

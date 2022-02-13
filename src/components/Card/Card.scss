@@ -29,4 +29,18 @@
         font-size: $subtitle-font-size;
         font-weight: $subtitle-font-weight;
     }
+
+    @media screen and (max-width: $breakpoint-mobile) {
+        @include box(200px, 250px);
+        margin: 20px;
+
+        .card-image {
+            @include box(200px);
+        }
+
+        .card-text {
+            @include box(200px, 50px);
+            font-size: $subtitle-font-size-mobile;
+        }
+    }
 }

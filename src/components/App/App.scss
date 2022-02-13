@@ -23,4 +23,9 @@
   width: 100%;
   max-width: 1000px;
   min-height: calc(90vh - 30px);
+
+  @media screen and (max-width: $breakpoint-mobile) {
+    min-height: calc(100vh - 50px - 30px);
+    margin: 0;
+  }
 }

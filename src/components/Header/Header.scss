@@ -17,6 +17,10 @@ header {
         }
     }
 
+    @media screen and (max-width: $breakpoint-mobile) {
+        height: 50px;
+    }
+
     .change-theme-button {
         @include box(40px);
         position: absolute;
@@ -42,6 +46,10 @@ header {
                 border-color: $dark-theme-button-hover-background-color;
                 color: $title-text-color-dark;
             }
+        }
+
+        @media screen and (max-width: $breakpoint-mobile) {
+            @include box(34px);
         }
     }
 }
