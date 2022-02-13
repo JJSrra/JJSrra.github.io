@@ -23,6 +23,7 @@ header {
 
     .change-theme-button {
         @include box(40px);
+        @include flex-center;
         position: absolute;
         right: 20px;
 
